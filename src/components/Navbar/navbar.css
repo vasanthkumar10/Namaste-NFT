@@ -1,0 +1,91 @@
+/* It contains CSS properties of both desktop and mobile navbar view */
+
+/* desktop */
+
+.desktop-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 80px;
+}
+
+.navbar-wrapper-mobile {
+  /* hide mobile view */
+  display: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-content li {
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 500;
+  margin: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* mobile view */
+
+@media screen and (max-width: 640px) {
+  .desktop-navbar {
+    display: none;
+  }
+
+  .navbar-wrapper-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar-btn {
+    background-color: #ff4320;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .logo-text {
+    font-size: 26px;
+    margin: 10px;
+    font-weight: 700;
+  }
+
+  .navbar-items-mobile {
+    color: #111111;
+    list-style-type: none;
+  }
+
+  .navbar-items-mobile li {
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

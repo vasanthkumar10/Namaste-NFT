@@ -1,0 +1,176 @@
+/* Utils CSS properties */
+
+/* button */
+.namaste-btn {
+  background-color: #ff4320;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  height: 60px;
+  padding: 16px 32px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.namaste-btn:hover {
+  background-color: #ff5c3e;
+}
+
+/* card */
+.card {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 300px;
+  margin: 16px 10px 16px;
+  background: linear-gradient(
+    94.67deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  border: 1px solid #606060;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 100px;
+}
+
+.card-img {
+  margin: 16px 10px 16px 14px;
+}
+
+.card-text {
+  margin: 20px 0;
+  font-size: 24px;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+/* card mobile */
+
+@media screen and (max-width: 640px) {
+  .card {
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 8px;
+  }
+
+  .card-content {
+    height: 60px;
+    width: 240px;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+}
+
+/* card-slider */
+.card-slider {
+  width: 400px;
+  height: 500px;
+}
+
+/* card slider mobile view */
+
+@media screen and (max-width: 640px) {
+  .card-slider {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+/* count-down timer */
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 16px 100px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 36px;
+  margin: 20px 0 80px 0;
+}
+
+.countdown-time {
+  margin: 0;
+  font-weight: 700;
+}
+
+.countdown-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.countdown-wrapper {
+  margin: 0 30px;
+}
+
+/* countdown mobile view */
+
+@media screen and (max-width: 640px) {
+  .countdown-timer {
+    padding: 16px 60px;
+    font-size: 24px;
+    width: 100%;
+    margin: 20px 0 40px 0;
+  }
+
+  .countdown-text {
+    font-size: 14px;
+  }
+}
+
+/* dropdown */
+.dropdown-wrapper {
+  width: 610px;
+  background-color: transparent;
+  margin: 10px 10px;
+}
+
+.ant-collapse {
+  background: transparent;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.ant-collapse-content {
+  background-color: transparent;
+  color: white;
+}
+
+.ant-collapse > .ant-collapse-item {
+  border: 0;
+}
+
+/* anime-user */
+
+@media screen and (max-width: 640px) {
+  .anime-user {
+    display: none;
+  }
+}
