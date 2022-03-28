@@ -2,14 +2,9 @@
 
 /* home */
 .home {
-  background: linear-gradient(
-    113.52deg,
-    #ff4320 5.76%,
-    #cc446d 25.04%,
-    #9b45b8 45.19%,
-    #4d78d3 68.51%,
-    #0ae178 88.3%
-  );
+  background-image: url("../../assets/banner/banner_stars.gif");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,9 +24,8 @@
 
 @media screen and (max-width: 640px) {
   .home {
+    background-image: url("../../assets/banner/banner_stars_mobile.gif");
     height: 100vh;
-    background-size: contain;
-    background-position: center;
   }
 
   .home-counter {
@@ -42,11 +36,10 @@
 /* mission */
 
 .mission {
-  background-color: transparent;
-  background-image: url("../../assets/banner/mission.png");
+  background-image: url("../../assets/banner/volunteer.png");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-color: transparent;
   height: 100vh;
   padding: 5%;
   display: flex;
@@ -71,6 +64,11 @@
   text-align: start;
 }
 
+.mission img {
+  height: 600px;
+  width: 500px;
+}
+
 /* mission mobile */
 
 @media screen and (max-width: 640px) {
@@ -79,6 +77,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-repeat: no-repeat;
     align-items: center;
     height: auto;
   }
@@ -96,6 +95,21 @@
   .mission img {
     height: 400px;
     width: 300px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .mission-title {
+    font-size: 60px;
+  }
+
+  .mission-text {
+    font-size: 28px;
+  }
+
+  .mission img {
+    height: 800px;
+    width: 600px;
   }
 }
 
@@ -146,11 +160,10 @@
 
 /* volunteering */
 .volunteering {
-  background-color: transparent;
   background-image: url("../../assets/banner/volunteer.png");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-color: transparent;
   display: flex;
   color: #222222;
   flex-direction: column;
@@ -219,6 +232,19 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .volunteer-header {
+    font-size: 60px;
+  }
+
+  .volunteer-text {
+    font-size: 28px;
+    margin: 40px;
+    max-width: fit-content;
+    text-align: center;
+  }
+}
+
 /* FAQs */
 
 .faqs {
@@ -247,16 +273,22 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .faq-title {
+    font-size: 60px;
+  }
+}
+
 /* poap */
 
 .poap-wrapper {
+  background-image: url("../../assets/banner/volunteer.png");
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  background-image: url("../../assets/banner/poap.png");
-  background-size: cover;
-  background-position: center;
   padding: 80px;
 }
 
@@ -272,7 +304,7 @@
 .poap-header {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 40px;
   margin: 0;
   background: linear-gradient(
     113.52deg,
@@ -294,10 +326,17 @@
   margin: 40px 20px;
 }
 
+.poap-wrapper img {
+  height: 600px;
+  width: 500px;
+}
+
 /* poap mobile view */
 
 @media screen and (max-width: 640px) {
   .poap-wrapper {
+    background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -308,6 +347,7 @@
   .poap-wrapper img {
     height: 400px;
     width: 300px;
+    margin: 40px;
   }
 
   .poap {
@@ -324,6 +364,21 @@
   .poap-text {
     font-size: 16px;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .poap-header {
+    font-size: 60px;
+  }
+
+  .poap-text {
+    font-size: 28px;
+  }
+
+  .poap-wrapper img {
+    height: 800px;
+    width: 600px;
   }
 }
 
@@ -356,6 +411,10 @@
   cursor: pointer;
 }
 
+.media-links-footer a {
+  margin: 0;
+}
+
 .copyright {
   text-align: center;
 }
@@ -363,10 +422,10 @@
 /* artists */
 
 .artists {
-  background-color: transparent;
-  background-image: url("../../assets/banner/artists.png");
+  background-image: url("../../assets/banner/volunteer.png");
   background-position: center;
   background-size: cover;
+  background-color: transparent;
   height: 100vh;
   padding: 5%;
   display: flex;
@@ -375,7 +434,7 @@
 }
 
 .artists-title {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 600;
   font-family: "Rubik", sans-serif;
   margin: 20px 20px 20px 0;
@@ -428,5 +487,17 @@
   .artists-text {
     font-size: 16px;
     text-align: center;
+    max-width: fit-content;
+    margin: 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .artists-text {
+    font-size: 28px;
+  }
+
+  .artists-title {
+    font-size: 60px;
   }
 }

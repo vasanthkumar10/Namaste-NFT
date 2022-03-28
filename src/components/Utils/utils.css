@@ -20,10 +20,17 @@
   background-color: #666;
 }
 
+@media screen and (min-width: 1600px) {
+  .namaste-btn {
+    font-size: 30px;
+    height: 80px;
+  }
+}
+
 /* card */
 .card {
-  height: 400px;
-  width: 300px;
+  height: 500px;
+  width: 400px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -34,8 +41,8 @@
 .card-content {
   display: flex;
   align-items: center;
-  height: 60px;
-  width: 240px;
+  height: 80px;
+  width: 300px;
   margin: 16px 10px 16px;
   background: linear-gradient(
     94.67deg,
@@ -80,10 +87,39 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .card {
+    height: 800px;
+    width: 600px;
+  }
+
+  .card-img {
+    margin: 28px 16px 28px 20px;
+    height: 90px;
+    width: 90px;
+  }
+
+  .card-content {
+    height: 120px;
+    width: 480px;
+  }
+
+  .card-text {
+    font-size: 28px;
+  }
+}
+
 /* card-slider */
 .card-slider {
   width: 400px;
   height: 500px;
+}
+
+@media screen and (min-width: 1600px) {
+  .card-slider {
+    width: 600px;
+    height: 800px;
+  }
 }
 
 /* card slider mobile view */
