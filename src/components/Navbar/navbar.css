@@ -21,7 +21,7 @@
 }
 
 .logo-text {
-  color: white;
+  color: #fff;
   font-family: "Rubik", sans-serif;
   font-size: 36px;
   margin: 10px;
@@ -37,7 +37,7 @@
 .navbar-content li {
   list-style-type: none;
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: #fff;
   font-weight: 500;
   margin: 20px;
   font-size: 20px;
@@ -53,17 +53,21 @@
 
   .navbar-wrapper-mobile {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
   .navbar-btn {
-    background-color: #ff4320;
+    background-color: #222;
     width: 50px;
     height: 50px;
     border-radius: 5px;
     border: 0;
     cursor: pointer;
+  }
+
+  .navbar-btn:hover {
+    background-color: #444;
   }
 
   .logo img {

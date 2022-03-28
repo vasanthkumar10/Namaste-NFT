@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/icons/svgs/namaste-logo.svg";
+import Logo from "../../assets/banner/Namaste_white.png";
 import "./navbar.css";
 import NamasteButton from "../Utils/NamasteButton";
 
@@ -7,8 +7,7 @@ function DesktopNav() {
   return (
     <div className="desktop-navbar">
       <span className="logo">
-        <img src={Logo} alt="" />
-        <h2 className="logo-text">Namaste NFT</h2>
+        <img src={Logo} alt="" width={150} height={150} color={"white"} />
       </span>
       <span className="navbar-content">
         <li>Home</li>

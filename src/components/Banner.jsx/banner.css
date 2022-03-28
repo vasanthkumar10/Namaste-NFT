@@ -1,0 +1,61 @@
+.desktop-banner {
+  background: transparent;
+  background-image: url("../../assets/banner/desktop-banner.png");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  margin: 20px;
+}
+
+.mobile-banner {
+  display: none;
+}
+
+/* mobile */
+
+@media screen and (max-width: 640px) {
+  .desktop-banner {
+    display: none;
+  }
+
+  .mobile-banner {
+    color: white;
+    display: block;
+  }
+
+  .mobile-banner-header {
+    color: white;
+    font-size: 55px;
+    font-style: italic;
+    font-family: "Rubic", sans-serif;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .mobile-banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-banner-text {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: left;
+    margin: 0;
+  }
+
+  .mobile-banner-text p,
+  h2 {
+    margin: 0;
+  }
+
+  .mobile-banner-number {
+    font-size: 55px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: left;
+    margin: 10px;
+  }
+}

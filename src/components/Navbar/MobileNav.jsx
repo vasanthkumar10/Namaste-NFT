@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Drawer } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
-import Logo from "../../assets/icons/svgs/namaste-logo.svg";
+import Logo from "../../assets/banner/Namaste_white.png";
 import "./navbar.css";
 
 function MobileNav({ loreScroll, ethmapScroll, teamScroll, faqScroll }) {
@@ -18,7 +18,6 @@ function MobileNav({ loreScroll, ethmapScroll, teamScroll, faqScroll }) {
     <div className="navbar-wrapper-mobile">
       <span className="logo">
         <img src={Logo} alt="" />
-        <h2 className="logo-text">Namaste NFT</h2>
       </span>
       <button className="navbar-btn" onClick={showDrawer}>
         <MenuOutlined />

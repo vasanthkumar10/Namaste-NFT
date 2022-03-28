@@ -2,7 +2,7 @@
 
 /* button */
 .namaste-btn {
-  background-color: #ff4320;
+  background-color: #222222;
   border: 0;
   border-radius: 4px;
   color: #ffffff;
@@ -17,23 +17,25 @@
 }
 
 .namaste-btn:hover {
-  background-color: #ff5c3e;
+  background-color: #666;
 }
 
 /* card */
 .card {
-  height: 500px;
-  width: 400px;
+  height: 400px;
+  width: 300px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  background-size: cover;
+  border-radius: 8px;
 }
 
 .card-content {
   display: flex;
   align-items: center;
-  height: 80px;
-  width: 300px;
+  height: 60px;
+  width: 240px;
   margin: 16px 10px 16px;
   background: linear-gradient(
     94.67deg,
@@ -52,7 +54,7 @@
 
 .card-text {
   margin: 20px 0;
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
@@ -99,13 +101,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #222222;
+  background-color: #f5f5f5;
+  color: #222222;
   width: fit-content;
   border-radius: 8px;
-  padding: 16px 100px;
+  padding: 16px 80px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 36px;
-  margin: 20px 0 80px 0;
+  margin: 20px;
 }
 
 .countdown-time {
